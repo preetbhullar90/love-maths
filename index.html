@@ -10,22 +10,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="heading"></h1>
+    <h1 class="heading">
     <img class="logo" src="assets/images/logo.png" alt="logo">Love Maths
+    </h1>
     <div class="game-area">
      <div class="controls-area">
-         <buttoN class="btn btn--big btn--green">
+
+         <button data-type="addition" class="btn btn--big btn--green">
             <i class="fas fa-plus"></i> 
-         </buttoN>
-         <buttoN class="btn btn--big btn--blue">
+         </button>
+
+         <button data-type="subtract" class="btn btn--big btn--blue">
             <i class="fas fa-minus"></i> 
-         </buttoN>
-         <buttoN class="btn btn--big btn--orange">
+         </button>
+
+         <button data-type="multiply" class="btn btn--big btn--orange">
             <i class="fas fa-times"></i> 
-         </buttoN>
-         <buttoN class="btn btn--big btn--red">
+         </button>
+
+         <button data-type="division" class="btn btn--big btn--red">
             <i class="fas fa-divide"></i> 
-         </buttoN>
+         </button>
+
      </div>
      <div class="question-area">
          <span id="operand1">0</span>
@@ -35,7 +41,7 @@
          <p class="Answer-message">Enter Answer:</p>
          <input id="answer-box" type="number">
      </div>
-     <button class="btn btn--gray">Submit Answer</button>
+     <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
   
     <div class="score-area">
